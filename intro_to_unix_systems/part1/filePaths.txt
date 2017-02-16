@@ -1,0 +1,13 @@
+/usr/local/src/fmbg1.c
+/usr/lib64/opencryptoki/methods/mfp-py.fig
+/usr/lib64/pkcs11/methods/mfp-py.fig
+/usr/sbin/mfp-py.fig
+/usr/include/gonzo.txt
+/usr/site/man/blitzen.ps
+/usr/site/doc/fmsn.eps
+/usr/site/bin/fm-hbin2
+/usr/share/fmsn.rtf
+/usr/src/fmbg2.c
+/usr/bin/fm-hbin1
+/usr/local/src/c9-136.tar.gz
+/usr/local/src/ampkg.bz2
