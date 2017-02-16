@@ -1,0 +1,13 @@
+Matthew Rundle
+Lab 9 Report
+cse20211.01
+
+	For this lab, we were instructed to make a travel agent program that would help the user build an itinerary of flights for a day. From the user's perspective, the program asks the user for the starting airport, then displays the available flights. For each hop, the user picks the next flight, and repeats until done. When complete, the program writes out the complete itinerary to a file called itinerary.txt.
+
+	From the programmers perspective, this program is a good example of having to read and write from files, and also using structs to contain a bunch of information. The program defines a struct "flight" that contains the information for one flight, including flight number, destination port, port of origin, time of arrival, time of departure, and cost. The program also creates an "itinerary" array that keeps track of the flights currently selected by the user - one attribute of this array is that it stores its own size (number of flights) in itinerary[0].  Next, the program reads a list of flights "flights.txt" into an array of flight structs on the stack.  After all of this is done, the program is ready to address the user.  First, the program prints out the list of possible starting airports, and asks the user for input.  After scanning in this input, it then enters the main loop of the program, which does as follows: clears screen and prints header (for aesthetics), prints the current itinerary to the screen, prints the available flight options based on the users first preference or the last flight in the itinerary, prints feedback to the user based on their last choice (success/failure/erros), and finally asks the user for their next input and handles it appropriately before returning back to the beginning of the loop.  Each of these tasks is handled by a function within the program.  Once the user has chosen to end the program and print the itinerary, the loop is exited.  The program informs the user that their itinerary has been printed and thanks them for using the program.  The itinerary is then printed to a different file, "itinerary.txt." via another function in the program.
+
+	To check the output of the program, I tried various different combinations of inputs and flight patterns. To ensure a complete program, I tried to make it foolproof in many different ways, including possibilities of: entering a non-existant flight number, cancelling the previous flight whenever there is none left on the itinerary, and entering a flight that occurred earlier in the day than the itinerary allowed.  I tried to make sure, for multiple different scenarios, that the program behaved as expected and that the itinerary printed correctly to "itinerary.txt".
+
+
+
+

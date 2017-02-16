@@ -1,0 +1,18 @@
+Matthew Rundle
+cse20211.01
+Lab 4
+Lab Report
+
+	For the creative portion of this week's lab we were asked to design a sickening carnival ride. From a users standpoint, this program is relatively
+simple; just start the program, view the motion of the carnival ride, and press 'q' to quit. For an added bonus, they can also use the + and - buttons 
+to control the speed of the ride if they so choose.
+	From a programmer's perspective, the inner workings of the program are relatively simple in the main function, but some careful thought was 
+required in the drafting of the functions used their. There were four general moving "parts," that each depended on the other. First was the structure
+itself, which slides back and forth horizontally. Next, there is a large bar that swings circularly (it is called a "pendulum" in the program) from a 
+fixed point on top of the main structure. From the end of this pendulum bar is another bar that extends in both directions and twirls radially. At each 
+end of this spinning bar are circular carts (where the riders are strapped in), which are spinning throughout the ride.  To coordinate all of these and 
+make sure that everything is in the same place, the functions are written in a cascading style, where a general 'draw structure' function is called 
+from the main function, which calls a function that adds the pendulum, which calls another function that adds the rotating bars, which calls a final 
+function that draws the wheel carts. In this way, the positions and speeds of each component are interlinked.  
+	Validating results was fairly easy in this particular case, because to check the code you simply had to open up the program and see if the 
+correct animation was produced for a fair amount of time. 

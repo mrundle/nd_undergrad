@@ -1,0 +1,16 @@
+My program for the creative portion of Lab 1 (prog3) computes a popular equation in kinematics, vf=vi+a*t. 
+From the user's perspective, the program outputs the final velocity of an object in motion after
+the intial velocity, acceleration, and duration of movement are input. From a programmer's 
+perspective, the program first declares all variables. Next, the program prompts the user to provide
+values for certain variables. Using this information to plug into the equation, the program 
+calculates the value for final velocity, and then displays it to the user. 
+
+To evaluate the program for correctness, I ran through a few instances of choosing different sets
+of numbers and then plugging them into the program. After attaining a result, I then checked the 
+math by hand to make sure that the two matched up. When extremely small (or extremely large numbers) 
+are used, however, the computer will return inaccurate results. For example, if you input the number
+.0000001 for each variable, the computer will return 0.000000 for the final velocity. On the other end, 
+extremely large numbers will also skew the accuracy a little bit, but the calculation can still be
+performed. To counterbalance this issue, I made the program terminate if the user tried to use values
+that were too small to make accurate calculations. For general purposes, however, I think that this 
+program is very well suited for a general audience.

@@ -1,0 +1,18 @@
+Matthew Rundle
+Lab 2
+cse20211.01 September 2012
+
+	This lab report covers the creative portion of Lab 2, namely part 3 of that lab. Part three asks for a program that generates a simple ASCII art
+graph of some mathematical function.  
+	From the user's point of view, the program states the function, and then displays the graph of the function using "#" symbols to illustrate the "y"
+values, with the x-axis running down the page. To the left of the graph, also down the page, there are two labeled columns that provide the "x" and "y" 
+values for each step of the graph.  At the end of the program, the maximum and minimum (both x and y values, in each case) are displayed to the user.
+	From my (the programmer's) point of view, this program was a tad tricky to execute. I had a little bit of a wild time coming up with a 
+suitable formula to use, but I settled on y=(x^3)+(x^2)-x+2, on the domain of x= -2 to 2. The best way I can qualitatively describe the behavior of this 
+graph is "up a little bit, then down a little hill, then rising sharply to culminate in a maxima." This seemed to be an "interesting pattern," but 
+I had to figure out how to actually print this in the window. To accomplish this, I set up a 'for' loop that ran through the domain of "x" in 
+increments of 0.01. For each iteration of this loop, I calculated the value for "y". Still in one iteration of this loop, and with 
+values for both x and y firmly in hand, I run another loop, in which the "y" value is used to appropriate a satisfactory number of "#" symbols
+that provide the number of iterations. As it prints #'s, each iteration of this loop-within-the-loop populates one row of the graph. The loop then
+terminates, moves back to the first loop (and consequently the next iteration of x) and goes through the whole process again, until the graph is completed.
+Along the way, the program is continually checking for both a maximum value and a minimum value, which it stores and then displays to the user at the end.

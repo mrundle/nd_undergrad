@@ -1,0 +1,19 @@
+Matthew Rundle
+Lab 8 Report 
+cse20211.01
+
+	In Lab 8 we were instructed to program a crossword puzzle generator that, given a list of words, creates a blank crossword anagram puzzle that can be
+played with paper and pencil. The program should also provide a solution for a player that gets stuck.
+	From the users perspective, the program begins by asking them to enter a list of up to twenty words of up to 15 characters each.  After the user
+has entered the list and ended it with a '.', the program then provides a crossword puzzle, the solution to the puzzle, and a list of hints in the form 
+of anagrams. 
+	From the perspective of the programmer, first an array is created to store the list of words input by the user. The program then scans in up to 
+20 words, filling the array. After this, an array of pointers is created, each element pointing to the first character of each word entered by the user. 
+Bubble sort is then used to sort the words into descending length. A 15x15 array is then created to store the contents of the board.  First, the longest
+word is placed horizontally in the middle of the board.  Next, each successive word (if possible) is placed onto the board.  To accomplish this, the program
+itteratively moves the word through the board looking for a "fit" such that it intersects another word in only one place, and that it maintains a space between
+itself and the rest of the words on the board.  Once all possible words on the list are placed, the program prints out the solution to the puzzle as well as 
+the blank puzzle itself (marking unused spaces with a '#' and empty spaces with a blank ' '). After this, the program then gives hints to the user by 
+giving the coordinates of the first letter of the word (pulling from a [][2] array) and then utilizes the "strfry" function to scramble the characters
+of each word and provide an anagram.
+	To test the function of the program, I tried many different inputs of words to ensure that the program would output the expected crosswords. 

@@ -1,0 +1,18 @@
+Matthew Rundle
+cse20211.01
+Lab 3
+Report
+
+	For the creative portion of this week's lab, I decided to make a little type of "game" for the user that incorporated circular motion. The game 
+, entitled Evil Knievel, consists of choosing a desired velocity and gravity from a series of check boxes, and then seeing if this combination can allow 
+a "rider" to jump over a pit of flames. Before jumping the pit of flames, the rider goes down a ramp and then upside down around a loop-de-loop.  When 
+the program is first run, a series of instructions are printed out to the console. When the user presses a certain button, a window opens up that
+represents the actual "game." The user can go through as many iterations of the game as they would like, quitting at any time by pressing 'q'. One notable
+feature of the animation is the flames, which seem to taunt Knievel, and the user, as they dance underfoot.
+	From the programming side of this, I decided to create a piecewise approach to how I would move the rider through the course. Each 'section' 
+is represented by its own bit of code, and a series of variables are both determined by the position of the rider, and determine which section of the 
+course that the rider is going through. On each of these pieces, a "total velocity" variable (as chosen by the user) determines either the 
+x and y velocities or the angular velocities for the rider. Some of the challenges I faced were making sure that the rider was always 
+orientated perpendicular to the track, and also "erasing" the old position of the rider each time through.
+	I verified that the program was correct by many instances of play testing and tweaking of the code. I went through each possible combination of 
+choices for both V and G to make sure that things were happening as they were supposed to. 
