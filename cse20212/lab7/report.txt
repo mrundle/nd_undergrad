@@ -1,0 +1,30 @@
+Matt Rundle
+cse20212.01
+lab7 report
+
+========[TRIP REPORT]==============
+ND -> Navy (Dublin) = 3621 miles
+Navy (Dublin) -> ND = 3621 miles
+ND -> Mich State = 117 miles
+Mich State -> ND = 117 miles
+ND -> Soldier Field = 74 miles
+Soldier Field -> ND = 74 miles
+ND -> Oklahoma = 749 miles
+Oklahoma -> ND = 749 miles
+ND -> BC = 781 miles
+BC -> ND = 781 miles
+ND -> USC = 1814 miles
+USC -> ND = 1814 miles
+-----------------------------------
+Total travel distance: 14312 miles
+===================================
+
+===[How the user uses the program:]=============================
+
+===[How the program works internally:]==========================
+
+===[How the program was verified:]==============================
+
+===[Potential algorithms to reduce the distance travelled:]=====
+
+

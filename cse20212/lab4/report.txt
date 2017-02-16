@@ -1,0 +1,80 @@
+Matt Rundle
+cse20212.01
+lab4 Report
+
+==================================================================
+	MONKEY SORT
+==================================================================
+
+	#Cards		#Shuffles to Sort
+
+		7			431			
+		7			5372
+		7			649
+		8			15727
+		8			21356
+		8			51551
+		9			61620
+		9			502085
+		9			356362
+
+==================================================================
+	BLACKJACK
+==================================================================
+
+
+--[How does the user use the blackjack program?]------------------
+
+
+This program is fairly easy to use from the user's perspective. 
+It displays one of the dealers cards, one hidden dealer card, and
+then two cards (and the summed total) of the user's draw.
+The user is then asked if they want to hit or stand. After winning
+or losing, the number of wins/losses for both the user and the 
+dealer is displayed and the user is asked if they want to continue.
+If they continue, the process is repeated. If they decline,
+the program ends.
+
+
+--[How does the blackjack program work internally]----------------
+
+
+Internally, the blackjack program makes use of two classes, the
+CardDeck class and the Hand class. The CardDeck class is basically
+a deque that upon object construction is populated with the 
+contents of a 'numeric' card deck (four suits of numbers 1-13).
+CardDeck also includes functions to interact with the deck, the 
+most important of which are the Deal() and Shuffle() functions.
+The Hand class is essentially a vector of cards that represent a
+blackjack player's current "hand," including functions to sum,
+display, clear, and add to the hand.
+
+The main program, main.cpp, first instantiates a CardDeck, shuffles
+it, and then instantiates a Hand for both the user and the dealer.
+Int values are initiated to keep track of user and dealer wins,
+a bool value called "GameOver" is set to false, and then the
+program enters the game loop that will continue until (GameOver ===
+true). Another bool value, "RoundOver", is also initiated and set
+to false - it is used to control the mechanism inside of the game
+loop. Once inside the game loop, two cards are dealt to each player,
+and then the program enters another loop controlled by the RoundOver
+boolean value. It displays the cards of each player and then asks
+the player if they want to hit or stand. The program then checks
+to see which player has won, increments the corresponding integer
+value, clears both players hands, tells the user who won, displays
+the win counts of each player, and then asks the user if they want
+to play again. If so, this process is repeated; if not, the program
+exits. 
+
+
+--[How was the blackjack program verified?]-----------------------
+
+
+To verify the blackjack program, I played the game multiple times
+and checked to ensure proper functioning of each component, 
+including the game loop, the total wins and losses of each player,
+whether or not formatting was correct, and whether or not the 
+program was correctly implementing the rules of blackjack. I 
+looked up some blackjack games online to compare mine with.
+
+

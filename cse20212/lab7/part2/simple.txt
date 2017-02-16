@@ -1,0 +1,6 @@
+	Shire	Mordor	Gondor	Rivendell	Moria
+Shire	0	800	600	500	400
+Mordor	800	0	200	900	300
+Gondor	600	200	0	500	400
+Rivendell	500	900	500	0	700
+Moria	400	300	400	700	0

@@ -1,0 +1,13 @@
+---------------------------------------------------------------------------------------------
+-				Lab 1 Coder Challenge					    -
+---------------------------------------------------------------------------------------------
+
+An interesting problem for chess buffs is the n Queens problem:  is it possible to place n
+queens on a chessboard such that no queen is threatening another queen?  Practically, this 
+means no two queens are in the same row, column or along the same diagonal.   Note that 
+there are over 4.4 billion possibilities for placing eight queens (64 choose 8) on a regular 
+chess board but only 92 valid solutions.
+
+Develop a C++ program to find at least one solution. Solving and outputting at least one 
+solution for the Eight Queen problem (n=8) likely requires recursive solutions and will be 
+awarded up to $40 coder dollars determined by our course software manager.  

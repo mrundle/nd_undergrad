@@ -1,0 +1,21 @@
+Matthew Rundle
+cse20212.01
+lab2 Report
+
+In this lab report (for lab2), the rational number calculator will be discussed.
+
+==========[How the user uses the program]==========
+
+From the user's perspective, this program is very simple to use. At the beginning of the program, the user is greeted and informed of the program's function. From there, the user is asked for two rational numbers; this is done by collecting the numerator and denominator of each number.  After they have done this, the reduced forms of their numbers are repeated back to them, and they are then displayed five calculations using the numbers.
+
+==========[How the program works internally]==========
+
+This program makes use of one class, Rational. The class has two private data members, which are integers storing the numerator and denominator of the rational number. The default constructor for the class sets both of these data members to zero, while the non-default constructor takes two integer inputs, assigns them to the numerator and denominator, and then reduces the rational number to its lowest form before storing the data. The class has a standard "get" function for both the numerator and denominator of each object.
+
+For functionality in programming the rational number calculator (in calc.cpp), the << operator is overloaded as a friend function; it takes a Rational as its input and prints out a nicely formatted version of the rational number in fraction format. Five more operators are also overloaded to allow mathematical manipulation of the rational numbers, including "+" for addition, "-" for subtraction, "*" for multiplication, "/" for division, and "%" for the critically important (and complex) Rundlean operation. Also included in the rational class is a private helper function that prepares the rational numbers for the addition and subtraction operations.
+
+Because it utilizes many functions in the Rational class, the main function (calc.cpp) is fairly simple. It greets the user, collects input, and then outputs the result of the five different operations.
+
+==========[How the program was verified]==========
+
+To verify the program, I ran through many combinations of different rational numbers and checked the programs output with the output of a mathematical calculator (examples include the TI-89, and the built in calculator on the Google search engine.)
